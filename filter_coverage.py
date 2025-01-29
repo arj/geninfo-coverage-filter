@@ -166,7 +166,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     
-    cov_file = open(args.filename, "r")
+    cov_file = open(args.info_file_name, "r")
     lines = cov_file.readlines()
 
     cf = CoverageFilter(lines, ignore_hidden_branches=args.filter_non_visible_branches)
