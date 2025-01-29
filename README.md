@@ -17,7 +17,7 @@ which do NOT have a corresponding line.
 # Example for use
 
 ```
-$ filter_coverage --filter_non_visible_branches main_coverage.info > filtered_main_coverage.info
+$ ./filter_coverage.py --filter_non_visible_branches main_coverage.info > filtered_main_coverage.info
 $ # Now we can call genhtml as before
 $ genhtml --branch-coverage main_coverage.info --output-directory out
 ```
