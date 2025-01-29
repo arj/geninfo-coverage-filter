@@ -161,7 +161,7 @@ if __name__ == "__main__":
                     prog='filter_coverage',
                     description='Filters a coverage info file as created by lcov.',
                     epilog='')
-    parser.add_argument('filename')
+    parser.add_argument('info_file_name')
     parser.add_argument('--filter_non_visible_branches', action='store_true')
 
     args = parser.parse_args()
